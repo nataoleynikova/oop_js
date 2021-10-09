@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <script src="../travel-agency/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+  <body>
+    <div>
+      <p>Сколько людей в школе?
+        <input id=people type="number" value="" size="40">
+      </p>
+      <button id="table">Таблица</button>
+    </div>
+    <br>
+    <div>
+      <table border="1">
+        <tr>
+          <th></th>
+          <th>Количество</th>
+          <td>
+            <table>
+              <th colspan="3">Возраст</th>
+            </table>
+          </td>
+          <td>
+            <table>
+              <th colspan="2">Пол</th>
+            </table>
+          </td>
+          <th>Зарплата</th>
+          <th>Стаж работы</th>
+          <th>Расписание</th>
+          <td>
+            <table>
+              <th colspan="3">Оценки</th>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+          <td>
+            <table>
+              <tr>
+                <td>М</td>
+                <td>Ж</td>
+              </tr>
+            </table>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <table>
+              <tr>
+                <td>"3"</td>
+                <td>"4"</td>
+                <td>"5"</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <th>Ученики</th>
+          <td id="Ch_quantity"></td>
+          <td>
+            <table border="1">
+              <tr>
+                <td id="first_ch_age">"7-11"</td>
+                <td id="second_ch_age">"12-16"</td>
+                <td id="third_ch_age">"17-18"</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td id="M_ch_sex"></td>
+                <td id="F_ch_sex"></td>
+              </tr>
+            </table>
+          </td>
+          <td>---</td>
+          <td>---</td>
+          <td id="ch_schedule"></td>
+          <td>
+            <table>
+              <tr>
+                <td id="C_mark"></td>
+                <td id="B_mark"></td>
+                <td id="A_mark"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <th>Учителя</th>
+          <td id="T_quantity"></td>
+          <td>
+            <table border="1">
+              <tr>
+                <td id="first_t_age">"25-35"</td>
+                <td id="second_t_age">"36-45"</td>
+                <td id="third_t_age">"46-55"</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td id="M_t_sex"></td>
+                <td id="F_t_sex"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table border="1">
+              <tr>
+                <td id="first_t_pay">"10000-20000"</td>
+                <td id="second_t_pay">"20000-30000"</td>
+                <td id="third_t_pay">"30000-40000"</td>
+                <td id="forth_t_pay">"40000-50000"</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table border="1">
+              <tr>
+                <td id="first_t_rate">"1-3"</td>
+                <td id="second_t_rate">"4-5"</td>
+              </tr>
+            </table>
+          </td>
+          <td id="t_schedule"></td>
+          <td>---</td>
+        </tr>
+        <tr>
+          <th>Персонал</th>
+          <td id="W_quantity"></td>
+          <td>
+            <table border="1">
+              <tr>
+                <td id="first_w_age">"25-35"</td>
+                <td id="second_w_age">"36-45"</td>
+                <td id="third_w_age">"46-60"</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td id="M_w_sex"></td>
+                <td id="F_w_sex"></td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table border="1">
+              <tr>
+                <td id="first_w_pay">"5000-10000"</td>
+                <td id="second_w_pay">"10000-20000"</td>
+                <td id="third_w_pay">"20000-30000"</td>
+                <td id="forth_w_pay">"30000-40000"</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table border="1">
+              <tr>
+                <td id="first_w_rate">"1-3"</td>
+                <td id="second_w_rate">"4-6"</td>
+                <td id="third_w_rate">"7-10"</td>
+              </tr>
+            </table>
+          </td>
+          <td>---</td>
+          <td>---</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <br>
+    <button id="analysis">Аналитика</button>
+    <div id="m_quant">Кол-во учеников на 1 учителя (в среднем):</div>
+    <div id="ch_m_age">Средний возраст учеников:</div>
+    <div id="t_m_age">Средний возраст учителей:</div>
+    <div id="w_m_age">Средний возраст персонала:</div>
+  </body>
+</html>
